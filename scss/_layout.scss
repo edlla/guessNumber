@@ -1,0 +1,83 @@
+.header {
+    text-align: center;
+    
+    .heading {
+      color: white;
+      font-size: 4rem;
+      margin-bottom: .5rem;
+    }
+
+    .range {
+        font-size: 1.965rem;
+        margin-bottom: 5rem;
+    }
+  }
+
+  .random {
+    margin-bottom: 7rem;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+
+    &::after,
+    &::before {
+        content: "";
+        height: 10px;
+        background-color: currentColor;
+        display: block;
+    }
+
+    .number {
+        font-size: 3.2rem;
+        font-weight: bold;
+        color: black;
+        background-color: white;
+        padding: 2rem 4rem;
+        border-radius: 5px;
+    }
+  }
+
+.playground {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    justify-items: center;
+
+    width: 60%;
+    margin: auto;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10rem;
+
+    .guess {
+        font-family: inherit;
+        width: 10rem;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1.1rem .5rem 1.1rem 4rem;
+        border-radius: 5px;
+
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .check {
+        margin-left: 1rem;
+    }
+
+    .prompt {
+        font-size: 3.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .score__label {
+        font-size: 2.6rem;
+        font-style: italic;
+
+        .score {
+            font-weight: bold;
+        }
+    }
+
+}

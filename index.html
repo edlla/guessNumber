@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app/css/styles.css">
+    <title>Guess a Number Game</title>
+</head>
+<body>
+    <header class="header">
+        <button class="btn again">Play Again!</button>
+        <h1 class="heading">Guess a number</h1>
+        <p class="range">&lt;Between 1 and 20 &gt;</p>
+    </header>
+
+    <div class="random"><span class="number">?</span></div>
+
+    <div class="playground">
+        <div class="left">
+            <input type="number" name="guess" class="guess">
+            <button class="btn check">Check!</button>
+        </div>
+        <div class="right">
+            <h2 class="prompt">Start Guessing ...</h2>
+            <p class="score__label">Scores: <span class="score">20</span></p>
+        </div>
+    </div>
+
+
+    <script src="app/js/app.js"></script>
+</body>
+</html>
